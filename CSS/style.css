@@ -1,8 +1,41 @@
-/* imoport fonts from fonts.css file */
+/* import fonts from fonts.css file */
 
-@import url(./fonts.css)
+@import url(./fonts.css);
+
+/* CSS variables */
+@import url(./Partials/_variables.css);
+
 
 /* Start Navigation */
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 1.7rem 0 3rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 8rem;
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.2rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
 
 /* End Navigation */
