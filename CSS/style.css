@@ -74,3 +74,21 @@
 
 
 /* End Banner Area */
+
+/* Start About Area */
+
+.site-main .about-area{
+    padding: 2.5rem 1rem;
+}
+
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/60px var(--roboto);
+    letter-spacing: 17px;
+}
+
+.site-main .about-area .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+/* End About Area */
