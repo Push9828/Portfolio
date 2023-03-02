@@ -1,5 +1,6 @@
 import React from "react";
 import Spline from "@splinetool/react-spline";
+import Resume from "../../assets/PushkarResume.pdf";
 
 const Hero = () => {
   return (
@@ -16,14 +17,14 @@ const Hero = () => {
             <h1 className="text-4xl leading-[44px] md:text-5xl md:leading-tight lg:text-6xl lg:leading-[1.2] font-bold md:tracking-[-2px] md:pb-12 pb-8">
               I build user friendly <br /> Web Interfaces.
             </h1>
-            <a href="../../assets/PushkarResume.pdf" download>
+            <a href={Resume} download="Resume">
               <button className="btn btn-md bg-accent hover:bg-accent-hover md:btn-lg transition-all">
                 Resume
               </button>
             </a>
           </div>
           <div className="hidden lg:flex flex-1 justify-end items-end h-full">
-            <Spline scene="https://prod.spline.design/xj5lAdubEGcSjaMO/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/DgRz3AeKouj-KcY6/scene.splinecode" />
           </div>
         </div>
       </div>

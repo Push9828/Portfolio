@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Logo from "../assets/img/logo.svg";
+import Logo from "../../assets/img/logo.svg";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
+import { Link } from "react-scroll";
 
 const Header = () => {
   const [background, setBackground] = useState(false);
@@ -20,9 +21,18 @@ const Header = () => {
       } flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
-        <a href="google">
+        <Link
+          to="home"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-50}
+          className="transition-all duration-300 cursor-pointer"
+        >
           <img src={Logo} alt="Logo" />
-        </a>
+        </Link>
+
         <div className="hidden lg:block">
           <Nav />
         </div>

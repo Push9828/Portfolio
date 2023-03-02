@@ -1,6 +1,7 @@
 import React from "react";
 import Avatar from "../../assets/img/3d-avatar.png";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const About = () => {
   const startDate = new Date("2021-09-03");
@@ -33,7 +34,9 @@ const About = () => {
               <h2 className="text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block">
                 Pushkar Thakur
               </h2>
-              <p className="mb-4 text-accent">Software Engineer</p>
+              <p className="mb-4 text-accent">
+                Software Engineer | AWS Community builder
+              </p>
               <hr className="mb-8 opacity-5" />
               <p className="mb-8">
                 Hey there! I'm a fresh 2021 graduate who started off my
@@ -56,9 +59,19 @@ const About = () => {
                 further! Let's create something amazing together.
               </p>
             </motion.div>
-            <button className="btn btn-md bg-accent hover:bg-accent-hover transition-all">
-              Contact me
-            </button>
+            <Link
+              to="contact"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className="transition-all duration-300"
+            >
+              <button className="btn btn-md bg-accent hover:bg-accent-hover transition-all">
+                Contact me
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -32,14 +32,18 @@ const Project = ({ projectInfo }) => {
       >
         <h2 className="text-3xl font-semibold mb-4 lg:text-left">{title}</h2>
         <p className="text-lg mb-4 mr-4 lg:text-left">{description}</p>
-        <a
-          className="text-lg font-medium mb-4 w-36 lg:w-32 lg:text-base"
-          href={repoLink}
-          rel="noreferrer"
-          target="_blank"
-        >
-          🔗 GitHub Repo
-        </a>
+        {repoLink && (
+          <div className="text-center lg:text-left mb-4">
+            <a
+              className="text-lg font-medium w-36 lg:w-32 lg:text-base"
+              href={repoLink}
+              rel="noreferrer"
+              target="_blank"
+            >
+              🔗 GitHub Repo
+            </a>
+          </div>
+        )}
         <div className="grid grid-cols-2 mb-4">
           {techStack.map((techItem) => (
             <div key={techItem} className="flex">
