@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #878e99;
+  border-radius: 20px
+}
+
 @layer base {
   body {
     @apply font-body text-paragraph leading-6 bg-gray-200;
@@ -33,10 +42,10 @@
     @apply h-[48px];
   }
   .input {
-    @apply bg-secondary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:outline focus:outline-1 focus:outline-accent;
+    @apply bg-primary text-paragraph h-[60px] outline-none pl-6 w-full font-body text-[15px] rounded-sm focus:border-b-2 focus:border-[#ac6b34]/40
   }
   .textarea {
-    @apply bg-secondary resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:outline focus:outline-1 focus:outline-accent;
+    @apply bg-primary resize-none w-full outline-none p-6 rounded-sm h-[200px] focus:border-b-2 focus:border-[#ac6b34]/40
   }
   .active {
     @apply text-accent;

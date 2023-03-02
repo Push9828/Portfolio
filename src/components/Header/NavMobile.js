@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll/modules";
-import { navigation } from "../data";
-import Socials from "./Socials";
+import { navigation } from "../../data";
 import { XIcon } from "@heroicons/react/outline";
 import { MenuAlt3Icon } from "@heroicons/react/outline";
 
@@ -74,6 +73,7 @@ const NavMobile = () => {
                 smooth={true}
                 duration={500}
                 offset={-70}
+                onClick={() => setIsOpen(false)}
                 className="text-xl cursor-pointer capitalize"
               >
                 {item.name}
