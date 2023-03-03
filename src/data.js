@@ -1,10 +1,10 @@
 //  icons
 import { FiLinkedin, FiTwitter, FiGithub, FiPenTool } from "react-icons/fi";
 
-import Project1 from "./assets/img/projects/p1.png";
-import Project2 from "./assets/img/projects/p2.png";
-import Project3 from "./assets/img/projects/p3.png";
-import Project4 from "./assets/img/projects/p4.png";
+import Project1 from "./assets/img/projects/p1.webp";
+import Project2 from "./assets/img/projects/p2.webp";
+import Project3 from "./assets/img/projects/p3.webp";
+import Project4 from "./assets/img/projects/p4.webp";
 
 // navigation
 export const navigation = [

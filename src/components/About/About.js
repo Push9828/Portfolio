@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "../../assets/img/3d-avatar.png";
+import Avatar from "../../assets/img/3d-avatar.webp";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
