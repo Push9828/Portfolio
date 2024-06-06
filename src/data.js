@@ -5,6 +5,7 @@ import Project1 from "./assets/img/projects/p1.webp";
 import Project2 from "./assets/img/projects/p2.webp";
 import Project3 from "./assets/img/projects/p3.webp";
 import Project4 from "./assets/img/projects/p4.webp";
+import Project5 from "./assets/img/projects/p5.webp";
 
 // navigation
 export const navigation = [
@@ -56,10 +57,19 @@ export const projectData = [
       "A personal developer portfolio site that provides a concise introduction about me and demonstrates my programming skills and experience.",
     repoLink: "https://github.com/Push9828/Portfolio",
     techStack: ["React.js", "Tailwind css", "Framer Animation"],
-    demoLink: "https://project-demo2.com",
   },
   {
     id: 2,
+    img: Project5,
+    title: "Apple iPhone15 Webpage",
+    description:
+      "Developed a website resembling Apple's iPhone 15 Pro page, focusing on high-fidelity design and smooth animations.",
+    repoLink: "https://github.com/Push9828/apple-website",
+    techStack: ["React.js", "Tailwind css", "Three.js", "GSAP"],
+    demoLink: "https://apple.pushkarthakur.dev",
+  },
+  {
+    id: 3,
     img: Project2,
     title: "Ultranous AI",
     description:
@@ -68,7 +78,7 @@ export const projectData = [
     demoLink: "https://www.ultranous.com/",
   },
   {
-    id: 3,
+    id: 4,
     img: Project3,
     title: "AWS User Group Nashik",
     description:
@@ -77,12 +87,12 @@ export const projectData = [
     demoLink: "https://www.awsugnsk.in/#/",
   },
   {
-    id: 4,
+    id: 5,
     img: Project4,
     title: "Netflix Homepage",
     description: "The website is the clone of Netflix India's home page.",
     repoLink: "https://github.com/Push9828/Netflix-clone",
     techStack: ["React.js", "Styled Components"],
-    demoLink: "https://netflix-clone-nu-flax.vercel.app/",
+    demoLink: "https://netflix.pushkarthakur.dev",
   },
 ];
